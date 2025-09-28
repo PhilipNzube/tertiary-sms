@@ -3,10 +3,11 @@
   command = "npm run build"
 
 [build.environment]
-  NODE_VERSION = "18.20.4"
+  NODE_VERSION = "20.19.0"
   NPM_FLAGS = "--legacy-peer-deps"
   CI = "false"
 
+# Handle SPA routing - redirect all routes to index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
